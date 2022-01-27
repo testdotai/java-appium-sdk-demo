@@ -1,0 +1,29 @@
+plugins {
+    id 'application'   
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+	implementation 'ai.test.sdk:test-ai-appium:0.0.2'
+	// implementation 'com.squareup.okhttp3:okhttp:4.9.3'
+    // implementation 'com.google.code.gson:gson:2.8.9'
+    // implementation 'io.appium:java-client:7.6.0'
+    // implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
+}
+
+application {
+    mainClass = 'ai.test.sdk.demo.Example'
+}
+
+tasks.named('test') {
+    // Use JUnit Platform for unit tests.
+    // useJUnitPlatform()
+}
+
+wrapper {
+    gradleVersion = '7.3.3'
+}
