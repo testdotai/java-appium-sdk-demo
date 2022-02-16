@@ -1,6 +1,7 @@
 package ai.test.sdk.demo;
 
 import java.io.File;
+import java.net.URL;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
 
@@ -8,8 +9,6 @@ import ai.test.sdk.TestAiDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
-
-import java.net.URL;
 
 /**
  * A brief example demonstrating the capabilities of test.ai enhanced Appium.

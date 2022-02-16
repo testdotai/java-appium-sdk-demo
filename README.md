@@ -1,6 +1,7 @@
 # test-ai-appium-demo
 [![JDK-11+](https://img.shields.io/badge/JDK-11%2B-blue)](https://adoptium.net)
 [![Apache 2.0](https://img.shields.io/badge/Apache-2.0-blue)](https://www.apache.org/licenses/LICENSE-2.0)
+[![Discord](https://img.shields.io/discord/853669216880295946?&logo=discord)](https://sdk.test.ai/discord)
 
 Welcome to the test.ai Appium Java demo!
 
@@ -15,7 +16,8 @@ Before we get started, please ensure that you have installed the following softw
 * [Node.js](https://nodejs.org/en/) - version `16.13.2` or newer
 * [Android Studio](https://developer.android.com/studio) - `2020.3.1` or newer
 
-You will also need a test.ai account, please visit https://sdk.test.ai to register.
+You will also need a test.ai account, please visit https://sdk.test.ai (it's free!) to register.
+
 ## An Introduction to the test.ai SDK
 In the following tutorial, you will learn how to set up and run AI-enhanced Appium with test.ai.
 
@@ -53,7 +55,7 @@ Next, we'll set up an Android emulator.
 5. Now click the green ▶ icon in the same row as your newly created Android emulator to start it (may take a few seconds to launch).
 6. (Optional) If you are using a newer version of Android Studio, you can undock the emulator by clicking the ⚙️ icon in the upper right corner of the `Emulator` sub-window, and click `View Mode` -> `Window`
 
-#### Configure Appium
+### Configure Appium
 Next, we'll set up Appium.  `cd` into the root directory of this repository and run
 ```bash
 npm install
@@ -65,11 +67,11 @@ npx appium
 
 👉 It is advisable to launch Appium in its own terminal window since it does not return terminal control back to you after starting.
 
+### Run the demo
 We're almost there!  Please visit https://sdk.test.ai, and log into your account.  Please copy your `API key` (in the upper right corner of your screen), you will need this for the next step.
 
 ![Example API Key](https://testdotai.github.io/static-assets/appium-demo/api_key.png)
 
-### Run the demo
 It's now finally time to run the demo!  `cd` into the root directory of this repository, and run the following command, replacing the text `YOUR_API_KEY` with your test.ai API key.
 ```bash
 ./gradlew run --args=YOUR_API_KEY
@@ -84,7 +86,7 @@ If everything worked, the [Wikipedia app](https://play.google.com/store/apps/det
 
 🎥 Click [here](https://testdotai.github.io/static-assets/appium-demo/no_ai_example_flow.mp4) to see a video of the expected behavior.
 
-This sample code is using the standard Appium selectors without any AI, which is how apps today are commonly tested.  However, these selectors are fragile and break easily, as even minor changes to an App may cause them to *immediately* stop working.  Fortunately, the test.ai SDK is equipped to help you avoid this unecessary hassle.
+Thus far, this sample code is using the standard Appium selectors without any AI, which is how apps today are commonly tested.  However, these selectors are fragile and break easily, as even minor changes to an App may cause them to *immediately* stop working.  Fortunately, the test.ai SDK is equipped to help you avoid this unecessary hassle.
 
 ### Using test.ai with Appium
 
@@ -184,10 +186,11 @@ The demo will repeat the same steps that it did previously, only this time, it's
 And that wraps up this tutorial!  As far as next steps go, feel free to experiment more with this code and try out some of the other selectors.  Good luck and have fun! 🎉
 
 ## Additional Resources
-* [API docs](https://testdotai.github.io/java-appium-sdk/)
+* [API docs](https://www.javadoc.io/doc/ai.test.sdk/test-ai-appium)
 * [Another Basic Tutorial](https://sdk.test.ai/tutorial)
 
 ## Contact
 Questions?  Comments?  We'd love to hear from you!
 
-✉️ Drop us a line: `sdk {at} test.ai`
+* ✉️ Email us: `sdk {at} test.ai`
+* 💬 Chat with us on Discord: https://sdk.test.ai/discord
