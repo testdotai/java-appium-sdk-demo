@@ -7,7 +7,7 @@ repositories {
 }
 
 dependencies {
-	implementation 'ai.test.sdk:test-ai-appium:0.0.2'
+	implementation 'ai.test.sdk:test-ai-appium:0.0.3'
 }
 
 application {
