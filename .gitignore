@@ -20,3 +20,5 @@ Thumbs.db
 /bin/
 
 Scratch*.java
+
+node_modules

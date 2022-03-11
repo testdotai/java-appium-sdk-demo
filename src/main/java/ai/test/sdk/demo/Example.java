@@ -3,10 +3,10 @@ package ai.test.sdk.demo;
 import java.io.File;
 import java.net.URL;
 
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import ai.test.sdk.TestAiDriver;
-import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 
@@ -32,15 +32,15 @@ public class Example
 		capabilities.setCapability("appWaitForLaunch", false);
 		capabilities.setCapability("newCommandTimeout", 0);
 
-		AndroidDriver<MobileElement> androidDriver = new AndroidDriver<>(new URL("http://localhost:4723/wd/hub"), capabilities);
-		TestAiDriver<MobileElement> driver = new TestAiDriver<>(androidDriver, args[0]);
+		AndroidDriver<WebElement> androidDriver = new AndroidDriver<>(new URL("http://localhost:4723/wd/hub"), capabilities);
+		TestAiDriver<WebElement> driver = new TestAiDriver<>(androidDriver, args[0]);
 
-		MobileElement b = driver.findElementByXPath("//android.widget.Button[@text='SKIP']", "skip_button");
+		WebElement b = driver.findElementByXPath("//android.widget.Button[@text='SKIP']", "skip_button");
 		b.click();
 
 		Thread.sleep(5000);
 
-		MobileElement searchField = driver.findElementByXPath("//android.widget.TextView[@text='Search Wikipedia']", "search_wiki_button");
+		WebElement searchField = driver.findElementByXPath("//android.widget.TextView[@text='Search Wikipedia']", "search_wiki_button");
 		searchField.click();
 
 		Thread.sleep(5000);

@@ -3,11 +3,14 @@ plugins {
 }
 
 repositories {
+    mavenLocal()
     mavenCentral()
 }
 
 dependencies {
-	implementation 'ai.test.sdk:test-ai-appium:0.0.3'
+	implementation 'ai.test.sdk:test-ai-appium:0.1.0'
+    implementation 'org.slf4j:slf4j-reload4j:1.7.36'
+    implementation 'org.apache.logging.log4j:log4j-api:2.17.1'
 }
 
 application {
